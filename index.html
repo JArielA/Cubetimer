@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speedcube Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="scramble-bar">
+      <p id="scramble" class="scramble" aria-live="polite"></p>
+      <button id="newScramble" class="btn" type="button">Nuevo scramble</button>
+    </section>
+
+    <section class="stage" aria-live="off">
+      <p id="status" class="status">Mantén ESPACIO 2 s para iniciar la inspección</p>
+      <div id="timer" class="timer" data-state="idle">0.00</div>
+      <div class="hold-track" aria-hidden="true"><div id="holdFill" class="hold-fill"></div></div>
+    </section>
+
+    <section class="stats">
+      <dl class="summary">
+        <div><dt>Mejor</dt><dd id="best">–</dd></div>
+        <div><dt>Ao5</dt><dd id="ao5">–</dd></div>
+        <div><dt>Media</dt><dd id="mean">–</dd></div>
+        <div><dt>Solves</dt><dd id="count">0</dd></div>
+      </dl>
+      <div class="history-head">
+        <h2>Historial</h2>
+        <button id="clear" class="btn btn-ghost" type="button">Borrar todo</button>
+      </div>
+      <ol id="history" class="history"></ol>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
