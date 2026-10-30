@@ -21,7 +21,7 @@
   // 'idle' | 'inspection' | 'running'
   let state = 'idle';
   let holding = false;
-  let holdStart = 0;
+  let holdStart = 2;
   let inspectionStart = 0;
   let solveStart = 0;
   let rafId = 0;
